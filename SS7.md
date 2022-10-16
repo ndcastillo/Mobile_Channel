@@ -49,13 +49,41 @@ El STPs enruta los mensajes SS7 que esta basada en información contenida en un 
 
 Los STP tienen 3 niveles:
 
-1. National Signal Transfer Point
+1. National Signal Transfer Point:
+Una STP Nacional existe con la red nacional, utilizado para transferir mensajes por un estandar nacinal del protocolo, que luego pueden pasar por un STP internacional, haciendo conversiones de ANSI a ITU-TS.
+
 2. International Signal Transfer Point
+UN STP internacional funciona con una red internacional, este provee la interconección SS7 de todos los paises usando el protocolo estandar ITU-TS.
+
 3. Gateway Signal Transfer Point
+Un Gateway STP convierte los datos de señalización de un procolo a otro. Los Gateways STPs son generalmente usados cono un punto de acceso para las redes internacionales. 
 
 ![](2022-10-10-10-59-42.png)
 
 ### Signal Control Point (SCP)
+Un SCP es un computador que utilizara como una interfaz para un sistema de bases de datos de telecomunicaciones, en esta base de datos se encontraran los registros HLR, VLR, LNP entre otros.
+
+Estas bases de datos se encuentran enlazadas a los SCPs por medio del protocolo de enturtamiento X.25, y estos pueden brindar información a traves de una conversión de X.25 a SS7 o directamente.
+
+### Enlaces SS7
+Un enlace SS7 es una linea de transmisión fisica de manera serial por un canal de 56/64 kbps que conecta los nodos individuales en una red SS7.
+
+Las redes SS7 son construidas para ser altamente confiables y redundantes, en donde la diversidad de los enlaces se construyen sobre un diseño de la red, proveyendo multiples caminos de señalización, esto asegura que la redundancia en el enlace tenga la capacidad de resolver el trafico de las redes de enrutamientos.
+
+Tipos de enlaces:
+1. Enlace A
+
+2. Enlace B y D
+3. Enlace C
+4. Enlace E y F
+
+#### Cojunto de Enlaces
+Caracteristicas
+Interfaces fisicas de enlaces
+Enrutadores
+#### Puntos de  COdificación
+#### Numeros de redes
+
 
 
 ## Pila o Stack Protocolar SS7
